@@ -21,8 +21,7 @@ namespace NumberSenderClient
                 IPAddress ip = IPAddress.Any;
 
                 IPEndPoint endPoint = new IPEndPoint(ip,9999);
-                Myclient.EnableBroadcast = true;
-
+                
 
                 while (true)
                 {
@@ -31,11 +30,11 @@ namespace NumberSenderClient
 
                     string reshived = Encoding.ASCII.GetString(reshiveBytes);
 
-                    int reshivednumber = Convert.ToInt32(reshived);
+                    //int reshivednumber = Convert.ToInt32(reshived);
 
-                    Console.WriteLine("Number Reshived: " + reshivednumber);
-
-                    Thread.Sleep(1);
+                    Console.WriteLine(endPoint.Address +" Number Reshived: " + reshived);
+                    
+                   
                 }
             }
             catch (Exception)

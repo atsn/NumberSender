@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace NumberSenderServer
@@ -19,8 +20,9 @@ namespace NumberSenderServer
             try
             {
                 UdpClient Myclient = new UdpClient();
-
+                Myclient.EnableBroadcast = true;
                 IPEndPoint endPoint = new IPEndPoint(IPAddress.Broadcast, 9999);
+                
                 while (true)
                 {
                     string senddata = numbers.ToString();
@@ -30,6 +32,7 @@ namespace NumberSenderServer
 
                     Console.WriteLine("Number sendt" + numbers );
                     numbers++;
+                    Thread.Sleep(1000);
                 }
             }
             catch (Exception)
