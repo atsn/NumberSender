@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6062A72F-FF2F-493C-93B9-8EAA2A7AEAE1}</ProjectGuid>
+    <ProjectGuid>{0143CCCC-0BF0-4CAA-ABAC-1D9CB973F1E3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NumberSenderClient</RootNamespace>
-    <AssemblyName>NumberSenderClient</AssemblyName>
+    <RootNamespace>NumberSenderServer</RootNamespace>
+    <AssemblyName>NumberSenderServer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
